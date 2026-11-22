@@ -1,0 +1,29 @@
+{
+  "roles": {
+    "measure": {
+      "mlabonne/harmful_behaviors train[:400]": 400,
+      "mlabonne/harmless_alpaca train[:400] (harmless)": 400
+    },
+    "tune": {
+      "mlabonne/harmful_behaviors test[:100]": 100,
+      "declare-lab/CategoricalHarmfulQA en, 2 per subcategory (55 subcategories)": 109,
+      "walledai/MaliciousInstruct": 91
+    },
+    "held-out": {
+      "JailbreakBench/JBB-Behaviors harmful": 89,
+      "TrustAIRLab/forbidden_question_set, 10 per policy (13 policies)": 130,
+      "walledai/TDC23-RedTeaming": 81
+    }
+  },
+  "dropped_duplicates": {
+    "tune": 1,
+    "held-out": 27
+  },
+  "tuning300.txt": 300,
+  "tuning100.txt": 100,
+  "heldout300.txt": 300,
+  "heldout100.txt": 100,
+  "measure_harmful.txt": 400,
+  "measure_harmless.txt": 400,
+  "legacy_heldout_prefix_intact": false
+}

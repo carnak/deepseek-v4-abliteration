@@ -1,0 +1,8 @@
+site.env
+.pipeline/
+__pycache__/
+*.pyc
+# Built by tools/build_prompt_sets.py, not shipped (data/README.md):
+data/prompts/tuning*.txt
+data/prompts/heldout*.txt
+data/prompts/measure_*.txt
