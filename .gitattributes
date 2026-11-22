@@ -1,0 +1,3 @@
+# LF everywhere: the shell scripts run on Linux nodes, and data/SHA256SUMS
+# checks files byte for byte.
+* text=auto eol=lf
